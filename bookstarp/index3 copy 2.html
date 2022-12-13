@@ -12,17 +12,7 @@
     <!-- 響應式網站 -->
     <meta name="viewport" content="width+device-width, initial-scale=1.0">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <!-- jQuery library -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 <style>
     *{
         margin: 0;
@@ -122,7 +112,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Multimedia Design</a>
+        <a href="#" class="logo">第四市場</a>
         <ul class="nav">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -132,17 +122,74 @@
         </ul>
     </header>
     <section class="parallax">
-        <h2 id="title">Mountain Scene</h2>
-        <img src="img/monutain_01.png" id="m1">
-        <img src="img/trees_02.png" id="tree2">
-        <img src="img/monutain_02.png" id="m2">
-        <img src="img/trees_01.png" id="tree1">
-        <img src="img/people.png" alt="people">
-        <img src="img/plants.png" alt="plant">
+        <h2 id="title">第四市場</h2>
+        <img src="img/01.png" id="01">
+        <img src="img/02.png" id="02">
+        <img src="img/03.png" id="03">
+        <img src="img/04.png" id="04">
+        <img src="img/05.png" alt="05">
+        <img src="img/06.png" alt="06">
     </section>
     <div class="content">
     <h2>簡介</h2>
         <p>歷史建築臺中市第四市場,於昭和7年(1932)創立，舊稱干城町消費市場（亦稱第四消費市場），隨著鄰近的建國市場設立、聚落人口的流失，消費人口大不如前，導致第四市場逐漸沒落，因而歇業，面臨拆除危機,民國101年文化局將第四市場列為歷史建築,才得以保留下來。</p>
     </div>
+    <script>
+        gsap.to("#01", {
+           scale:2, 
+           duration:5,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 30%",
+             end: "top 10%",
+             scrub: true,
+             markers: true
+           }
+        });
+
+        gsap.to("#02", {
+           scale:0.8, 
+           duration:5,
+           transformOrigin: "50% 100%",
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+
+        gsap.to("#03", {
+           x:-300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#04", {
+           x:300, 
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#title", {
+           color: "blue", 
+           rotation: 360,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+    </script>
 </body>
 </html>
