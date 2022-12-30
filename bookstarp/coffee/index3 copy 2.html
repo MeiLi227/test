@@ -11,7 +11,10 @@
     <meta charset="UTF-8">
     <!-- 響應式網站 -->
     <meta name="viewport" content="width+device-width, initial-scale=1.0">
-
+ 
+ <!-- Boostrap 導入程式 -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 <style>
     *{
@@ -112,14 +115,18 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">第四市場</a>
-        <ul class="nav">
-            <li><a href="index4.html" class="active">Home</a></li>
-            <li><a href="index3 copy 2.html">簡介</a></li>
-            <li><a href="BG.html">場地介紹</a></li>
-            <li><a href="Taichung4thMarket.html">菜單</a></li>
-            <li></li>
-        </ul>
+        <nav class="navbar navbar-expand navbar-light">
+             <h2>第四市場</h2>
+              <div class="navbar-collapse" id="lokinav">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item"><a class="nav-link" href="index3 copy 2.html">簡介</a></li>
+                  <li class="nav-item"><a class="nav-link" href="BG.html">場地介紹</a></li>
+                  <li class="nav-item"><a class="nav-link" href="Taichung4thMarket.html">菜單</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">活動</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">店家資訊</a></li>
+                </ul>
+              </div>
+          </nav>
     </header>
     <section class="parallax">
         <h2 id="title">第四市場</h2>

@@ -8,7 +8,7 @@ body {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("img/CounterPic.jpeg");
+    background-image: url("CounterPic.jpeg");
     background-attachment: fixed;
     color: rgb(165, 136, 77);
 }
