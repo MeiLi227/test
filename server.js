@@ -1,3 +1,15 @@
+var express = require("express");
+var bodyParser = require("body-parser");
+
+server = express();
+var fs = require("fs");
+
+server.use(express.static("bookstarp\coffe"));//web root
+//server.use(express.static("md110"));//web root
+server.use(bodyParser.urlencoded());
+server.use(bodyParser.json());
+
+
 server.get("/service", function(req, res){
 
     Services = [
