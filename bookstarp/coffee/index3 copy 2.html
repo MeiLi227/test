@@ -145,19 +145,58 @@
     </header>
     <section class="parallax">
         <h2 id="title">第四市場</h2>
-        <img src="place.png" id="place">
-        <img src="dogg.png" id="dogg">
-        
-        <img src="flower.png" id="flower">
+        <img src="coffe01.png" id="coffe01">
+        <img src="coffe06.png" id="coffe06">
+   
+        <img src="coffe02.png" id="coffe02">
     
-        <img src="upper.png" alt="upper">
+        <img src="coffe05.png" alt="coffe05">
     </section>
+    <div class="row tab-pane fade show active"id="roomA">
+        <!-- row>col content A-->
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="old03.JPG" class="card-img-top">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="old01.jpg" class="card-img-top">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-4">
+            <div class="card">
+              <img src="old04.jpg" class="card-img-top">
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
     <div class="content">
     <h2>簡介</h2>
-        <p>歷史建築臺中市第四市場,於昭和7年(1932)創立，舊稱干城町消費市場（亦稱第四消費市場），隨著鄰近的建國市場設立、聚落人口的流失，消費人口大不如前，導致第四市場逐漸沒落，因而歇業，面臨拆除危機,民國101年文化局將第四市場列為歷史建築,才得以保留下來。</p>
+        <p>歷史建築臺中市第四市場,於昭和7年(1932)創立，舊稱干城町消費市場（亦稱第四消費市場），隨著鄰近的建國市場設立、聚落人口的流失，
+            消費人口大不如前，導致第四市場逐漸沒落，因而歇業，面臨拆除危機,後又因年久失修，木造建築腐朽殘破，於民國51年(1962)改建，
+            規模包括可容納24個攤位的市場建築，6間二層樓之連棟店舖住宅，辦公室、垃圾場與廁所等。民國104年（2015）以其與常民生活相關，
+            具歷史文化價值，建築仍存部份舊有構件與形貌，能體現地域風貌，
+            並深具再利用潛力，公告登錄為歷史建築。2021年12月重新開幕。</p>
     </div>
     <script>
-        gsap.to("#flower", {
+
+        gsap.to("#title", {
+           color: "blue", 
+           rotation: 360,
+           scrollTrigger:{
+             trigger: "#title",
+             start: "100px 50%",
+             end: "top 10%",
+             scrub: true
+           }
+        });
+
+        gsap.to("#coffe02", {
            scale:2, 
            duration:5,
            scrollTrigger:{
@@ -169,7 +208,7 @@
            }
         });
 
-        gsap.to("#upper", {
+        gsap.to("#coffe05", {
            scale:0.8, 
            duration:5,
            transformOrigin: "50% 100%",
@@ -182,7 +221,7 @@
         });
 
 
-        gsap.to("#dogg", {
+        gsap.to("#coffe06", {
            x:-300, 
            scrollTrigger:{
              trigger: "#title",
@@ -202,16 +241,9 @@
            }
         });
 
-        gsap.to("#title", {
-           color: "blue", 
-           rotation: 360,
-           scrollTrigger:{
-             trigger: "#title",
-             start: "100px 50%",
-             end: "top 10%",
-             scrub: true
-           }
-        });
+    
+
+        
     </script>
 </body>
 </html>
