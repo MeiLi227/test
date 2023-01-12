@@ -38,23 +38,23 @@
 }
 
 .panel:nth-child(1) {
-    background-image: url("img/CounterPic.jpeg");
+    background-image: url("CounterPic.jpeg");
 }
 
 .panel:nth-child(2) {
-    background-image: url("img/Food.jpg");
+    background-image: url("Food.jpg");
 }
 
 .panel:nth-child(3) {
-    background-image: url("img/Drink.jpg");
+    background-image: url("Drink.jpg");
 }
 
 .panel:nth-child(4) {
-    background-image: url("img/WallDoor.JPG");
+    background-image: url("WallDoor.JPG");
 }
 
 .panel:nth-child(5) {
-    background-image: url("img/Window.jpg");
+    background-image: url("Window.jpg");
 }
 
 .panel-content {
